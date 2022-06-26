@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/marcokaniecki/Desktop/ECED3403 - Computer Architecture/Labs/L4-Trees/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu99 -o CMakeFiles/L4_Trees.dir/main.c.o -c \"/Users/marcokaniecki/Desktop/ECED3403 - Computer Architecture/Labs/L4-Trees/main.c\"",
+  "file": "/Users/marcokaniecki/Desktop/ECED3403 - Computer Architecture/Labs/L4-Trees/main.c"
+}
+]

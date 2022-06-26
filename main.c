@@ -17,7 +17,7 @@ int main()
         }
         else
         {
-
+            printf("adding node\n");
         }
 
     }
@@ -27,15 +27,34 @@ int main()
 
 void add_data(NODE *root, char *data)
 {
-    // if (_strcmpi())
-    if (root->left != NULL)
+    if (strcasecmp(root->data, data) < 0)
     {
-        add_data(root->left, data);
+        if (root->left != NULL)
+        {
+            add_data(root->left, data);
+        }
+        else
+        {
+            root = new_node(data);  // TODO: ????
+        }
     }
-    else
+    else if (strcasecmp(root->data, data) > 0)
     {
-        new_node(data);  // TODO: ????
+        if (root->right != NULL)
+        {
+            add_data(root->right, data);
+        }
+        else
+        {
+             root = new_node(data);
+        }
     }
+    else  // copy of data already exits
+    {
+        root->count++;
+    }
+
+    
 
 }
 
