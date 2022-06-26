@@ -9,9 +9,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define SIZE 128
-#define TRUE 1
-#define FALSE 0
+#define SIZE               128
+#define TRUE               1
+#define FALSE              0
+#define TRUNCATE(name)     name[strlen(name)-1] = '\0'
 
 FILE *infile;
 char inrec[SIZE];
@@ -23,7 +24,8 @@ typedef struct node
     struct node *left, *right;
 }NODE;
 
-extern NODE* new_node(char *data);
-extern void add_data(NODE *root, char *data);
+NODE* new_node(char *data);
+void add_data(NODE *root, char *data);
+void print_tree(NODE *root);
 
 #endif //L4_TREES_TREE_H
