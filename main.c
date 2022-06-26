@@ -5,14 +5,25 @@
 
 int main()
 {
+    char filename[SIZE];
     int first_entry = TRUE;
     NODE *start;
 
-    infile = fopen("in.txt", "r");
+    printf("Enter filename\n");
+    printf("> ");
+    scanf("%s", filename);
+    getchar();
+
+    if (fopen(filename, "r") == 0)
+    {
+        printf("Error opening >%s<\n", filename);
+        return -1;
+    }
+    infile = fopen(filename, "r");
 
     while (fgets(inrec, SIZE, infile) > 0)
     {
-        TRUNCATE(inrec);  // remove LF from input file
+        TRUNCATE(inrec);  // remove LF from each word in input file
 
         if (first_entry)
         {
@@ -22,6 +33,7 @@ int main()
         else  // if tree already exists, add leaf
             add_data(start, inrec);
     }
+    printf("** SORTED BINARY TREE **\n");
     print_tree(start);  // print contents of tree, sorted
     fclose(infile);
     return 0;
