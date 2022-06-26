@@ -1,5 +1,5 @@
 .idea
 cmake-build-debug
-.vscode
 build
-main.dSYM
+main.dsYM
+.vscode

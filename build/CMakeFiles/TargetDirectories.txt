@@ -1,3 +1,0 @@
-/Users/marcokaniecki/Desktop/ECED3403 - Computer Architecture/Labs/L4-Trees/build/CMakeFiles/L4_Trees.dir
-/Users/marcokaniecki/Desktop/ECED3403 - Computer Architecture/Labs/L4-Trees/build/CMakeFiles/edit_cache.dir
-/Users/marcokaniecki/Desktop/ECED3403 - Computer Architecture/Labs/L4-Trees/build/CMakeFiles/rebuild_cache.dir
